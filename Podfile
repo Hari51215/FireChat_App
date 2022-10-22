@@ -7,7 +7,6 @@ target 'FireChat' do
 
   # Pods for Validation
     pod 'Firebase'
-    # pod 'MessageKit'
     pod 'FirebaseAuth'
     pod 'GoogleSignIn'
     pod 'FirebaseStorage'
