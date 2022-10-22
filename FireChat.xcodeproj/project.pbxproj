@@ -5,7 +5,6 @@
 	};
 	objectVersion = 55;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		BC29FCBA28EC0A910099D5DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC29FC9128EC0A900099D5DE /* GoogleService-Info.plist */; };
 		BC29FCBB28EC0A910099D5DE /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29FC9328EC0A900099D5DE /* SignOutViewController.swift */; };
