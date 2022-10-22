@@ -56,7 +56,8 @@ class AuthenticateViewController: UIViewController, UITextFieldDelegate, UITextV
                     return
                 }
                 
-                let credential = GoogleAuthProvider.credential (withIDToken: idToken, accessToken: authentication.accessToken)
+                let credential = GoogleAuthProvider.credential (withIDToken: idToken,
+                                                                accessToken: authentication.accessToken)
                 
                 Auth.auth().signIn(with: credential) { [weak self] authResult , error in
                     guard let _ = error else {

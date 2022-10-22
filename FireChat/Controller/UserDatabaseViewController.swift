@@ -61,8 +61,7 @@ class UserDatabaseViewController: UIViewController {
     func checkUserDetails (userId: String,
                            userName: String,
                            fileCheck: Bool,
-                           completion : @escaping (Bool, String) -> Void)
-    {
+                           completion : @escaping (Bool, String) -> Void) {
         var count = 0
         var documentCheck = fileCheck
         var userIdName = userName
@@ -104,8 +103,7 @@ class UserDatabaseViewController: UIViewController {
                     documentCheck = false
                 }
                 func processResponse(groupId: String,
-                                     groupName: String)
-                {
+                                     groupName: String) {
                     if groupId != "" && groupName != "" {
                         AppConstants.groupIds.append(groupId)
                         AppConstants.groupNames.append(groupName)
@@ -128,8 +126,7 @@ class UserDatabaseViewController: UIViewController {
     }
     
     func groupDocuments (_document: QueryDocumentSnapshot,
-                         completion: @escaping (String, String) -> Void)
-    {
+                         completion: @escaping (String, String) -> Void) {
         var groupId = String()
         var groupName = String()
         AppConstants.dataBase.collection("UserDatabase").document(_document.documentID).collection("Group_Members_Data").getDocuments() { snapshot, error in

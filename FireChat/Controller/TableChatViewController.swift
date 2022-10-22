@@ -25,8 +25,8 @@ class TableChatViewController: UIViewController {
     private var createGroupButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .darkGray
-        let image = UIImage(systemName: "plus.message.fill",
-                            withConfiguration: UIImage.SymbolConfiguration(pointSize: 25, weight: .medium))
+        let image = UIImage(systemName: "plus.message.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 25,
+                                                                                                            weight: .medium))
         button.setImage(image, for: .normal)
         button.tintColor = .white
         button.setTitleColor(.white, for: .normal)
@@ -180,7 +180,6 @@ extension TableChatViewController: UITableViewDelegate {
 extension TableChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        
         if section == 0 {
             return AppConstants.userNames.count
         } else {
